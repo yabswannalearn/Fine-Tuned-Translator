@@ -4,7 +4,7 @@ we are using unsloth for 4bit quantization for our model
 our model is "Qwen3-1.7B-unsloth-bnb-4bit"
 
 ## Task
-Finetune the model to make it better at translating kapampangan into english and vice versa
+Finetune the model to make it better at translating kapampangan into english
 
 ## Dataset
 this if from huggingface [Kapampangan - English Sentences](https://huggingface.co/datasets/Coco-18/Kapampangan-English/viewer/default/train?p=4)
@@ -22,6 +22,7 @@ this if from huggingface [Kapampangan - English Sentences](https://huggingface.c
 
 ## Output
 
-BENCHMARK RESULTS: RAW VS FINE-TUNED  
-RAW MODEL - BLEU: 0.03 | chrF: 4.61
-TUNED MODEL - BLEU: 72.01 | chrF: 69.78 
+|**Metric**|**Raw Model (Base)**|**Fine-Tuned Model**|**Improvement**|
+|---|---|---|---|
+|**BLEU Score**|0.03|**72.01**|**+71.98**|
+|**chrF Score**|4.61|**69.78**|**+65.17**|
