@@ -1,28 +1,28 @@
 # Intro
 
-we are using unsloth for 4bit quantization for our model
-our model is "Qwen3-1.7B-unsloth-bnb-4bit"
+We are using **Unsloth** for 4-bit quantization.  
+**Model:** `Qwen3-1.7B-unsloth-bnb-4bit`
 
 ## Task
-Finetune the model to make it better at translating kapampangan into english
+Fine-tune the model to improve translation from Kapampangan to English.
 
 ## Dataset
-this if from huggingface [Kapampangan - English Sentences](https://huggingface.co/datasets/Coco-18/Kapampangan-English/viewer/default/train?p=4)
+* [Kapampangan-English Sentences](https://huggingface.co/datasets/Coco-18/Kapampangan-English)
 
 ## Steps
 1. Install required dependencies
 2. Load the model 
-3. Test the model without being fine tuned
-4. Initiate QLoRa for fine tuning
-5. Set up the Dataset
-6. Fine Tune the Model
-7. Inference the fine tuned model
-8. Benchmark BLEU and CHRF raw model and fine tuned model
-9. Save to Drive
+3. Test the base model (pre-fine-tuning)
+4. Initiate QLoRa for fine-tuning
+5. Set up the dataset
+6. Fine-tune the model
+7. Run inference on the fine-tuned model
+8. Benchmark BLEU and chrF (Raw vs. Fine-tuned)
+9. Save to Google Drive
 
 ## Output
 
-|**Metric**|**Raw Model (Base)**|**Fine-Tuned Model**|**Improvement**|
-|---|---|---|---|
-|**BLEU Score**|0.03|**72.01**|**+71.98**|
-|**chrF Score**|4.61|**69.78**|**+65.17**|
+| **Metric** | **Raw Model (Base)** | **Fine-Tuned Model** | **Improvement** |
+| :--- | :--- | :--- | :--- |
+| **BLEU Score** | 0.03 | **72.01** | **+71.98** |
+| **chrF Score** | 4.61 | **69.78** | **+65.17** |
