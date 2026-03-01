@@ -26,3 +26,9 @@ Fine-tune the model to improve translation from Kapampangan to English.
 | :--- | :--- | :--- | :--- |
 | **BLEU Score** | 0.03 | **72.01** | **+71.98** |
 | **chrF Score** | 4.61 | **69.78** | **+65.17** |
+
+
+## Implementation in RAG
+This fine-tuned model is deployed as the primary generation engine in the **Kapampangan2English RAG Pipeline**. 
+It utilizes a local vector database to further expand its vocabulary beyond the initial training set.
+[Kapampangan2English Implementation](https://github.com/yabswannalearn/Kapampangan2English)
